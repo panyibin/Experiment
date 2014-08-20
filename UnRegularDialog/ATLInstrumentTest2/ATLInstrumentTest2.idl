@@ -1,0 +1,18 @@
+// ATLInstrumentTest2.idl : IDL source for ATLInstrumentTest2
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ATLInstrumentTest2.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(BA5FF7F0-59B8-495D-86B3-D3971D06F6E0),
+	version(1.0),
+]
+library ATLInstrumentTest2Lib
+{
+	importlib("stdole2.tlb");
+};
+
