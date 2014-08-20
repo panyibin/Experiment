@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApp1", "PhoneApp1\PhoneApp1.csproj", "{1783CD5E-E993-4497-A7D5-8E493DD2C9F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App8.1", "App8.1\App8.1.csproj", "{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,24 @@ Global
 		{1783CD5E-E993-4497-A7D5-8E493DD2C9F7}.Release|x86.ActiveCfg = Release|x86
 		{1783CD5E-E993-4497-A7D5-8E493DD2C9F7}.Release|x86.Build.0 = Release|x86
 		{1783CD5E-E993-4497-A7D5-8E493DD2C9F7}.Release|x86.Deploy.0 = Release|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|ARM.Build.0 = Debug|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|ARM.Deploy.0 = Debug|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|x86.ActiveCfg = Debug|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|x86.Build.0 = Debug|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Debug|x86.Deploy.0 = Debug|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|ARM.ActiveCfg = Release|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|ARM.Build.0 = Release|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|ARM.Deploy.0 = Release|ARM
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|x86.ActiveCfg = Release|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|x86.Build.0 = Release|x86
+		{DD7EDBA4-D5B1-4D8C-B271-C787E911F790}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

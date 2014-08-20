@@ -8,6 +8,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PhoneApp1.Resources;
+using Microsoft.Phone.Tasks;
+using System.Reflection;
 
 namespace PhoneApp1
 {
@@ -20,6 +22,33 @@ namespace PhoneApp1
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+        private void Button_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
+        private void SendEmail_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            EmailComposeTask emailComposeTask = new EmailComposeTask();
+
+            string strOSVersion = null;
+
+            strOSVersion = Environment.OSVersion.ToString();
+
+            string appVersion = null;
+            Assembly assem = Assembly.GetExecutingAssembly();
+
+            AssemblyName assemName = assem.GetName();
+
+            Version appVer = assemName.Version;
+
+            emailComposeTask.Subject = "subject";
+            emailComposeTask.Body = "OS version:" + strOSVersion + "\nApp version:" + appVer.ToString();
+            emailComposeTask.To = "yibinpan@microsoft.com";
+
+            emailComposeTask.Show();
         }
 
         // Sample code for building a localized ApplicationBar
