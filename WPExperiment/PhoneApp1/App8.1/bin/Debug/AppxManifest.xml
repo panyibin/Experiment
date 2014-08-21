@@ -33,6 +33,8 @@
     <Capability Name="internetClientServer" />
   </Capabilities>
   <build:Metadata>
+    <build:Item Name="SharedGUID" Value="e6ced7a4-474a-4d3d-ae57-2d186b9a443f" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />

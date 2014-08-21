@@ -51,6 +51,19 @@ namespace PhoneApp1
             emailComposeTask.Show();
         }
 
+        private void Button_Tap_1(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
+        private void SearchImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            WebBrowserTask wbTask = new WebBrowserTask();
+            wbTask.Uri = new Uri("http://www.bing.com/images/search?q=%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE&amp;mkt=zh-cn");
+
+            wbTask.Show();
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

@@ -1,0 +1,14 @@
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\ApplicationIcon.png
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\Background.png
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\sdkToastNotificationCS.dll
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\sdkToastNotificationCS.pdb
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\AppManifest.xaml
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\Properties\WMAppManifest.xml
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\Bin\Debug\sdkToastNotificationCS_Debug_AnyCPU.xap
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\App.g.cs
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\MainPage.g.cs
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\Page2.g.cs
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\sdkToastNotificationCS.g.resources
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\sdkToastNotificationCS.dll
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\sdkToastNotificationCS.pdb
+D:\STUDY\Git\Toast Notification Sample\C#\sdkToastNotificationCS\obj\Debug\XapCacheFile.xml
