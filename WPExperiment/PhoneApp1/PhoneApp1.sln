@@ -13,6 +13,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "App8.1.Shared", "App8.1.Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App8.1.Windows", "App8.1.Windows\App8.1.Windows.csproj", "{67DBDB84-78A8-4217-B843-83F1D9F09457}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{CF7A27AC-6465-4299-8158-C03C518644B2}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		App8.1.Shared\App8.1.Shared.projitems*{e6ced7a4-474a-4d3d-ae57-2d186b9a443f}*SharedItemsImports = 13
@@ -94,6 +96,16 @@ Global
 		{67DBDB84-78A8-4217-B843-83F1D9F09457}.Release|x86.ActiveCfg = Release|x86
 		{67DBDB84-78A8-4217-B843-83F1D9F09457}.Release|x86.Build.0 = Release|x86
 		{67DBDB84-78A8-4217-B843-83F1D9F09457}.Release|x86.Deploy.0 = Release|x86
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF7A27AC-6465-4299-8158-C03C518644B2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

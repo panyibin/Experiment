@@ -17,3 +17,4 @@ D:\STUDY\Git\WPExperiment\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csproj.Generat
 D:\STUDY\Git\WPExperiment\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.dll
 D:\STUDY\Git\WPExperiment\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.pdb
 D:\STUDY\Git\WPExperiment\PhoneApp1\PhoneApp1\obj\Debug\XapCacheFile.xml
+D:\STUDY\Git\WPExperiment\PhoneApp1\PhoneApp1\obj\Debug\WebBrowser.g.cs

@@ -64,6 +64,16 @@ namespace PhoneApp1
             wbTask.Show();
         }
 
+        private void Button_Tap_2(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
+        private void GoToWebBrowser_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/WebBrowser.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

@@ -1,0 +1,6 @@
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\STUDY\Git\WPExperiment\PhoneApp1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
