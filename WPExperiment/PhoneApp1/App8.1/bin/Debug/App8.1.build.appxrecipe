@@ -43,11 +43,17 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\JavaScriptWindowScroll.html">
+      <PackagePath>JavaScriptWindowScroll.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\bin\Debug\PivotPage.xbf">
+      <PackagePath>PivotPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\bin\Debug\App8.1.xr.xml">
       <PackagePath>App8.1.xr.xml</PackagePath>

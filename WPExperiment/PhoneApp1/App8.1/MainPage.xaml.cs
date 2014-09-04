@@ -58,5 +58,10 @@ namespace App8._1
         {
             await Windows.System.Launcher.LaunchUriAsync(uri);
         }
+
+        private void GoToPivot_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PivotPage));
+        }
     }
 }

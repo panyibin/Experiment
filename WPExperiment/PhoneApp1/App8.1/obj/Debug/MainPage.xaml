@@ -9,8 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='1' x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="60,201,0,0" VerticalAlignment="Top"                     />
+        <Button x:ConnectionId='1' x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="37,202,0,0" VerticalAlignment="Top"                     />
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="37,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="290"/>
+        <Button x:ConnectionId='2' Content="GoTo PivotPage" HorizontalAlignment="Left" Margin="37,282,0,0" VerticalAlignment="Top"                        />
 
     </Grid>
 </Page>

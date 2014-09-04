@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="App8._1.PivotPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App8._1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot>
+            <PivotItem Header="One">
+                <WebView x:Name="Browser1" LoadCompleted="Browser1_LoadCompleted" ScriptNotify="Browser1_ScriptNotify"></WebView>
+            </PivotItem>
+            <PivotItem Header="Two">
+                <WebView x:Name="Browser2" LoadCompleted="Browser2_LoadCompleted" ScriptNotify="Browser2_ScriptNotify"></WebView>
+            </PivotItem>
+            <PivotItem Header="Three">
+                <WebView x:Name="Browser3" LoadCompleted="Browser3_LoadCompleted" ScriptNotify="Browser3_ScriptNotify"></WebView>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

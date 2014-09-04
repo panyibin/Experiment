@@ -19,7 +19,7 @@ namespace PhoneApp1
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            webBrowser.Navigate(new Uri("http://www.baidu.com"));
+            webBrowser.Navigate(new Uri("./JavaScriptWindowScroll.html",UriKind.Relative));
         }
     }
 }

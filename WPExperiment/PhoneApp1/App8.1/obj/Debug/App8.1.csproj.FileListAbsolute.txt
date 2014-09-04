@@ -30,3 +30,8 @@ D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\qualifiers.txt
 D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\qualifiers.txt.intermediate
 D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\ProjectArchitectures.txt
+D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\bin\Debug\PivotPage.xbf
+D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\PivotPage.g.i.cs
+D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\PivotPage.g.cs
+D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\PivotPage.xaml
+D:\STUDY\Git\WPExperiment\PhoneApp1\App8.1\obj\Debug\PivotPage.xbf
