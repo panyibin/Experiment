@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -12,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Web.Http;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -27,6 +29,7 @@ namespace App8._1
             this.InitializeComponent();
 
             //Browser1.AddHandler()
+
         }
 
         /// <summary>
@@ -38,26 +41,31 @@ namespace App8._1
         {
             //Browser1.Navigate(new Uri("https://www.bing.com/rewards/dashboard?setmkt=en-us"));
             //Browser2.Navigate(new Uri("https://www.bing.com/rewards/levels?mobileAppId=wprwappv2"));
-            Browser1.Navigate(new Uri("http://www.baidu.com"));
+            Browser1.Navigate(new Uri("https://www.baidu.com"));
             Browser2.Navigate(new Uri("https://www.bing.com/rewards/dashboard"));
             Browser3.Navigate(new Uri("ms-appx-web:///JavaScriptWindowScroll.html"));
+            Browser4.Navigate(new Uri("https://www.bing.com/rewards/levels"));
         }
 
         private void Browser1_ScriptNotify(object sender, NotifyEventArgs e)
         {
-
+            Debug.WriteLine("baidu:" + e.Value.ToString());
         }
 
         private void Browser2_ScriptNotify(object sender, NotifyEventArgs e)
         {
-
+            Debug.WriteLine("bing:" + e.Value.ToString());
         }
 
         private void Browser3_ScriptNotify(object sender, NotifyEventArgs e)
         {
-
+            Debug.WriteLine("own:" + e.Value.ToString());
         }
 
+        private void Browser4_ScriptNotify(object sender, NotifyEventArgs e)
+        {
+
+        }
         private async void Browser_LoadCompleted(object sender, NavigationEventArgs e)
         {
             WebView wb = sender as WebView;
@@ -74,18 +82,80 @@ namespace App8._1
 
         private async void Browser1_LoadCompleted(object sender, NavigationEventArgs e)
         {
-            await Browser1.InvokeScriptAsync("eval", new string[] { "window.addEventListener('MSPointerMove', function paint(event) {window.external.notify(event.clientX + ',' + event.clientY); }, false);" });
+            await Browser1.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'none';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);" });
         }
 
         private async void Browser2_LoadCompleted(object sender, NavigationEventArgs e)
         {
             //await Browser2.InvokeScriptAsync("eval", new string[] {"window.onscroll = function (){window.external.notify(window.pageXOffset + ';' + document.documentElement.scrollTop + ';' + document.body.scrollTop);}"});
-            await Browser2.InvokeScriptAsync("eval", new string[] { "window.addEventListener('MSPointerDown', function paint(event) {window.external.notify(event.clientX + ',' + event.clientY); }, false);" });
+            await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);" });
         }
 
         private async void Browser3_LoadCompleted(object sender, NavigationEventArgs e)
         {
-            await Browser3.InvokeScriptAsync("eval", new string[] { "window.addEventListener('MSPointerMove', function paint(event) {window.external.notify(event.clientX + ',' + event.clientY); }, false);" });
+            await Browser3.InvokeScriptAsync("eval", new string[] { "window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);" });
+        }
+        private void Browser4_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void Pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Pivot pt = sender as Pivot;
+
+            //PivotItem seletedPt = pt.SelectedItem as PivotItem;
+
+            //seletedPt.Foreground =  
+        }
+
+        private void homeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Browser2.Navigate(new Uri("https://www.bing.com/rewards/dashboard"));
+        }
+
+        private void refreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            Browser2.Refresh();
+            Browser4.Refresh();
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(Browser2.CanGoBack)
+            {
+                Browser2.GoBack();
+            }
+        }
+
+        private void settingButton_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Web.Http.Filters.HttpBaseProtocolFilter myFilter = new Windows.Web.Http.Filters.HttpBaseProtocolFilter();
+            var cookieManager = myFilter.CookieManager;
+
+            HttpCookieCollection myCookieJar = cookieManager.GetCookies(new Uri("https://www.bing.com/rewards"));
+
+            foreach(HttpCookie cookie in myCookieJar)
+            {
+                cookieManager.DeleteCookie(cookie);
+            }
+        }
+
+        private async void Browser2_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+        {
+            try
+            {
+                await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);" });
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+            }
+        }
+
+        private void Browser2_NavigationFailed(object sender, WebViewNavigationFailedEventArgs e)
+        {
+
         }
     }
 }

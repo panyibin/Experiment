@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Scribble touch example</title>
-    <style>
+    <!--<style>
         html {
             -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
         }
-    </style>
+    </style>-->
 
     <script>
         //window.addEventListener('load', function () {
@@ -30,10 +30,16 @@
         //    }
         //});
         //window.addEventListener('MSPointerMove', function paint(event) {  window.external.notify(event.clientX + ',' + event.clientY); }, false);
+        document.documentElement.style.msTouchAction = "none";
+        window.addEventListener('pointerdown', function paint(event) {  var test = document.getElementById("test"); test.innerText = "mouse down:" + event.clientX + "," + event.clientY;}, false);
+        window.addEventListener('pointerup', function paint(event) { var test = document.getElementById("test"); test.innerText = "mouse up:" + event.clientX + "," + event.clientY; }, false);
+
+        //window.addEventListener('MSGestureStart', function paint(event) { var test = document.getElementById("test"); test.innerText = "MSGestureStart:" + event.clientX + "," + event.clientY; }, false);
+        //window.addEventListener('MSGestureEnd', function paint(event) { var test = document.getElementById("test"); test.innerText = "MSGestureEnd:" + event.clientX + "," + event.clientY; }, false);
     </script>
 
 </head>
-<body>
+<body style="height:2000px">
     <div id="test">test</div>
     <canvas id="drawSurface" width="500px" height="500px" style="border:1px solid black;">Canvas isn't supported by this browser or document mode</canvas>
    

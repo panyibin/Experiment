@@ -4,4 +4,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App8._1">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="PivotHeaderForegroundSelectedBrush" Color="Black" />
+                    <SolidColorBrush x:Key="PivotHeaderForegroundUnselectedBrush" Color="#AFAFAF" />
+                    <SolidColorBrush x:Key="ListBoxItemSelectedBackgroundThemeBrush" Color="White" />
+                    <SolidColorBrush x:Key="ListBoxItemSelectedForegroundThemeBrush" Color="Black" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
 </Application>

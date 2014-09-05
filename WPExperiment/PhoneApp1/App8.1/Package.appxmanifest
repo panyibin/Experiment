@@ -22,8 +22,10 @@
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
       <ApplicationContentUriRules>
-        <Rule Match="https://www.bing.com" Type="include" />
-        <Rule Match="https://www.baidu.com" Type="include" />
+        <Rule Match="https://*.bing.com" Type="include" />
+        <Rule Match="https://*.baidu.com" Type="include" />
+        <Rule Match="https://*.facebook.com" Type="include" />
+        <Rule Match="https://*.live.com" Type="include" />
       </ApplicationContentUriRules>
     </Application>
   </Applications>

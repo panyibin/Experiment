@@ -6,20 +6,42 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
 
     <Grid>
-        <Pivot>
+        <Pivot x:ConnectionId='1'                                           Background="White">
             <PivotItem Header="One">
-                <WebView x:ConnectionId='3' x:Name="Browser1"                                                                            ></WebView>
+                <WebView x:ConnectionId='5' x:Name="Browser1"                                                                            ></WebView>
             </PivotItem>
             <PivotItem Header="Two">
-                <WebView x:ConnectionId='2' x:Name="Browser2"                                                                            ></WebView>
+                <WebView x:ConnectionId='4' x:Name="Browser2"                                                                                                                                                                            ></WebView>
             </PivotItem>
             <PivotItem Header="Three">
-                <WebView x:ConnectionId='1' x:Name="Browser3"                                                                            ></WebView>
+                <WebView x:ConnectionId='3' x:Name="Browser3"                                                                            ></WebView>
+            </PivotItem>
+            <PivotItem Header="ThreePlus">
+                <WebView x:ConnectionId='2' x:Name="Browser4"                                                                            ></WebView>
+            </PivotItem>
+            <PivotItem Header="Four">
+                <ListBox FontSize="25">
+                    <ListBoxItem Content="hello"></ListBoxItem>
+                    <ListBoxItem Content="hello2"></ListBoxItem>
+                    <ListBoxItem Content="hello3"></ListBoxItem>
+                </ListBox>
             </PivotItem>
         </Pivot>
     </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar x:Name="commandBar"  ClosedDisplayMode="Minimal">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='6' x:Name="homeButton" Label="Home" Icon="Home"                         />
+                <AppBarButton x:ConnectionId='7' x:Name="backButton" Label="Back" Icon="Back"                         />
+                <AppBarButton x:ConnectionId='8' x:Name="refreshButton" Label="Refresh" Icon="Refresh"                            />
+                <AppBarButton x:ConnectionId='9' x:Name="settingButton" Label="Sign out" Icon="Setting"                            />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>
 

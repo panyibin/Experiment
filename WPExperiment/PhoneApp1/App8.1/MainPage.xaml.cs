@@ -63,5 +63,23 @@ namespace App8._1
         {
             this.Frame.Navigate(typeof(PivotPage));
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            var statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
+
+            //statusBar.ProgressIndicator.ProgressValue = 0.5;
+
+            statusBar.ProgressIndicator.ShowAsync();
+        }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            var statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
+
+            //statusBar.ProgressIndicator.ProgressValue = 0;
+
+            statusBar.ProgressIndicator.HideAsync();
+        }
     }
 }

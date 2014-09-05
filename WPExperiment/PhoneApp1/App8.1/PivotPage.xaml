@@ -6,19 +6,41 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
 
     <Grid>
-        <Pivot>
+        <Pivot SelectionChanged="Pivot_SelectionChanged" Background="White">
             <PivotItem Header="One">
                 <WebView x:Name="Browser1" LoadCompleted="Browser1_LoadCompleted" ScriptNotify="Browser1_ScriptNotify"></WebView>
             </PivotItem>
             <PivotItem Header="Two">
-                <WebView x:Name="Browser2" LoadCompleted="Browser2_LoadCompleted" ScriptNotify="Browser2_ScriptNotify"></WebView>
+                <WebView x:Name="Browser2" NavigationCompleted="Browser2_NavigationCompleted" NavigationFailed="Browser2_NavigationFailed" LoadCompleted="Browser2_LoadCompleted" ScriptNotify="Browser2_ScriptNotify"></WebView>
             </PivotItem>
             <PivotItem Header="Three">
                 <WebView x:Name="Browser3" LoadCompleted="Browser3_LoadCompleted" ScriptNotify="Browser3_ScriptNotify"></WebView>
             </PivotItem>
+            <PivotItem Header="ThreePlus">
+                <WebView x:Name="Browser4" LoadCompleted="Browser4_LoadCompleted" ScriptNotify="Browser4_ScriptNotify"></WebView>
+            </PivotItem>
+            <PivotItem Header="Four">
+                <ListBox FontSize="25">
+                    <ListBoxItem Content="hello"></ListBoxItem>
+                    <ListBoxItem Content="hello2"></ListBoxItem>
+                    <ListBoxItem Content="hello3"></ListBoxItem>
+                </ListBox>
+            </PivotItem>
         </Pivot>
     </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar x:Name="commandBar"  ClosedDisplayMode="Minimal">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="homeButton" Label="Home" Icon="Home" Click="homeButton_Click"/>
+                <AppBarButton x:Name="backButton" Label="Back" Icon="Back" Click="backButton_Click"/>
+                <AppBarButton x:Name="refreshButton" Label="Refresh" Icon="Refresh" Click="refreshButton_Click"/>
+                <AppBarButton x:Name="settingButton" Label="Sign out" Icon="Setting" Click="settingButton_Click"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>
