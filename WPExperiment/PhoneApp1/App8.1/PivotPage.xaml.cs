@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -45,6 +46,18 @@ namespace App8._1
             Browser2.Navigate(new Uri("https://www.bing.com/rewards/dashboard"));
             Browser3.Navigate(new Uri("ms-appx-web:///JavaScriptWindowScroll.html"));
             Browser4.Navigate(new Uri("https://www.bing.com/rewards/levels"));
+
+            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+        }
+
+        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            if(this.Frame != null && this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+
+                e.Handled = true;
+            }
         }
 
         private void Browser1_ScriptNotify(object sender, NotifyEventArgs e)

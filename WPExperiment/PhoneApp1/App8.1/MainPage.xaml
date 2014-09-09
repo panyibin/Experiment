@@ -9,9 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="37,202,0,0" VerticalAlignment="Top" Click="Search_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="37,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="290"/>
-        <Button Content="GoTo PivotPage" HorizontalAlignment="Left" Margin="37,282,0,0" VerticalAlignment="Top" Click="GoToPivot_Click"/>
+        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="37,80,0,0" VerticalAlignment="Top" Click="Search_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="37,28,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="290"/>
+        <Button Content="GoTo PivotPage" HorizontalAlignment="Left" Margin="37,440,0,0" VerticalAlignment="Top" Click="GoToPivot_Click"/>
+        <Button Content="Launch Google.com" HorizontalAlignment="Left" Margin="37,124,0,0" VerticalAlignment="Top" Click="LaunchGoogle_Click"/>
+        <Button Content="Send Email" HorizontalAlignment="Left" Margin="37,168,0,0" VerticalAlignment="Top" Click="SendEmail_Click"/>
+        <Button Content="Send Email2" HorizontalAlignment="Left" Margin="37,211,0,0" VerticalAlignment="Top" Click="SendEmail2_Click"/>
 
     </Grid>
 

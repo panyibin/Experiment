@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>YIBINPAN_WK</Machine>
+    <WindowsUser>yibinpan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>Microsoft.SDKSamples.GroupedGridView.CS</PackageIdentityName>
+    <IntermediateOutputPath>D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>2B272C2C7C18F9A9895750A7A50DA3591BD80EBF5168EF85E8D72CE2DAF71AB9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>Microsoft.SDKSamples.GroupedGridView.CS_1.0.0.0_neutral__8wekyb3d8bbwe</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>Microsoft.SDKSamples.GroupedGridView.CS_8wekyb3d8bbwe!GroupedGridView.App</RegisteredUserModeAppID>
+    <RegisteredPackageID>Microsoft.SDKSamples.GroupedGridView.CS</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-09T08:27:33.722</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\GroupedGridView.exe">
+      <PackagePath>GroupedGridView.exe</PackagePath>
+      <Modified>2014-09-09T08:27:32.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\microsoft-sdk.png">
+      <PackagePath>Assets\microsoft-sdk.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\placeholder-sdk.png">
+      <PackagePath>Assets\placeholder-sdk.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\smallTile-sdk.png">
+      <PackagePath>Assets\smallTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\splash-sdk.png">
+      <PackagePath>Assets\splash-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\squareTile-sdk.png">
+      <PackagePath>Assets\squareTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\storeLogo-sdk.png">
+      <PackagePath>Assets\storeLogo-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\tile-sdk.png">
+      <PackagePath>Assets\tile-sdk.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\Assets\windows-sdk.png">
+      <PackagePath>Assets\windows-sdk.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Banana.png">
+      <PackagePath>SampleData\Images\110Banana.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Lemon.png">
+      <PackagePath>SampleData\Images\110Lemon.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Mint.png">
+      <PackagePath>SampleData\Images\110Mint.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Orange.png">
+      <PackagePath>SampleData\Images\110Orange.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Strawberry.png">
+      <PackagePath>SampleData\Images\110Strawberry.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\110Vanilla.png">
+      <PackagePath>SampleData\Images\110Vanilla.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\220Strawberry.png">
+      <PackagePath>SampleData\Images\220Strawberry.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Banana.png">
+      <PackagePath>SampleData\Images\60Banana.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Lemon.png">
+      <PackagePath>SampleData\Images\60Lemon.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Mail01.png">
+      <PackagePath>SampleData\Images\60Mail01.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Mail02.png">
+      <PackagePath>SampleData\Images\60Mail02.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Mail03.png">
+      <PackagePath>SampleData\Images\60Mail03.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Mint.png">
+      <PackagePath>SampleData\Images\60Mint.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Orange.png">
+      <PackagePath>SampleData\Images\60Orange.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SauceCaramel.png">
+      <PackagePath>SampleData\Images\60SauceCaramel.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SauceChocolate.png">
+      <PackagePath>SampleData\Images\60SauceChocolate.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SauceStrawberry.png">
+      <PackagePath>SampleData\Images\60SauceStrawberry.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SprinklesChocolate.png">
+      <PackagePath>SampleData\Images\60SprinklesChocolate.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SprinklesRainbow.png">
+      <PackagePath>SampleData\Images\60SprinklesRainbow.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60SprinklesVanilla.png">
+      <PackagePath>SampleData\Images\60SprinklesVanilla.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Strawberry.png">
+      <PackagePath>SampleData\Images\60Strawberry.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\60Vanilla.png">
+      <PackagePath>SampleData\Images\60Vanilla.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\msg.png">
+      <PackagePath>SampleData\Images\msg.png</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\banana.jpg">
+      <PackagePath>SampleData\Images\banana.jpg</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\mint.jpg">
+      <PackagePath>SampleData\Images\mint.jpg</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\orange.jpg">
+      <PackagePath>SampleData\Images\orange.jpg</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\strawberry.jpg">
+      <PackagePath>SampleData\Images\strawberry.jpg</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\SampleData\Images\vanilla.jpg">
+      <PackagePath>SampleData\Images\vanilla.jpg</PackagePath>
+      <Modified>2014-06-05T23:27:06.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\ItemViewer.xbf">
+      <PackagePath>ItemViewer.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.445</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\Sample-Utils\SampleTemplateStyles.xbf">
+      <PackagePath>Sample-Utils\SampleTemplateStyles.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.449</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\Scenario3.xbf">
+      <PackagePath>Scenario3.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.452</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\Scenario2.xbf">
+      <PackagePath>Scenario2.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\Scenario1.xbf">
+      <PackagePath>Scenario1.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-09-09T08:27:32.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\GroupedGridView.xr.xml">
+      <PackagePath>GroupedGridView.xr.xml</PackagePath>
+      <Modified>2014-09-09T08:27:32.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\XAML GridView grouping and SemanticZoom sample\C#\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-09-09T08:27:33.568</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Email;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -69,6 +70,7 @@ namespace App8._1
             var statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
 
             //statusBar.ProgressIndicator.ProgressValue = 0.5;
+            statusBar.ProgressIndicator.Text = "loading";
 
             statusBar.ProgressIndicator.ShowAsync();
         }
@@ -80,6 +82,33 @@ namespace App8._1
             //statusBar.ProgressIndicator.ProgressValue = 0;
 
             statusBar.ProgressIndicator.HideAsync();
+        }
+
+        private async void LaunchGoogle_Click(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("http://www.google.com"));
+        }
+
+        private async void SendEmail_Click(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("mailto:yibinpan@microsoft.com?subject=hello world&body=world"));
+        }
+
+        private async void SendEmail2_Click(object sender, RoutedEventArgs e)
+        {
+            EmailRecipient sendTo = new EmailRecipient()
+            {
+                Address = "yibinpan@outlook.com"
+            };
+
+            EmailMessage mail = new EmailMessage();
+            mail.Subject = "google";
+            mail.Body = "\n\n\nmail body";
+            mail.To.Add(sendTo);
+            mail.CC.Add(sendTo);
+
+            await EmailManager.ShowComposeNewEmailAsync(mail);
+
         }
     }
 }
