@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="RewardsDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RewardsDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <!--<Page.Resources>
+        <Style x:Name="PivotItemStyle" TargetType="PivotItem">
+            <Setter Property="Margin" Value="0"></Setter>
+        </Style>
+    </Page.Resources>-->
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid x:Name="RewardsHeader" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*" MinWidth="30"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="Assets/BingIcon.png" Width="125" Height="27" Margin="20,21,0,0"></Image>
+            <Image Source="Assets/AppIcon.png" Width="19" Height="18" Margin="0,20,5,0" Grid.Column="1" HorizontalAlignment="Right"></Image>
+
+            <TextBlock x:Name="creditsHeader" Foreground="Black" FontSize="22" Grid.Column="2" Margin="0,23,5,0" HorizontalAlignment="Left" Text="90"></TextBlock>
+            
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,-30,0,0"><!--we have to use the -30 top margin to make the UI beautiful-->
+        <Pivot x:Name="PivotParent" Style="{StaticResource PivotStyle}" >
+            <PivotItem x:Name="dashboardItem" Header="dashboard" Style="{StaticResource PivotItemStyle}">
+                <WebView x:Name="dashboardBrowser" NavigationStarting="dashboardBrowser_NavigationStarting" ScriptNotify="Browser_ScriptNotify" NavigationCompleted="Browser_NavigationCompleted"></WebView>
+            </PivotItem>
+            <PivotItem x:Name="redeemItem" Header="redeem" Style="{StaticResource PivotItemStyle}">
+                <ListBox FontSize="25" Margin="15">
+                    <ListBoxItem x:Name="seeAllItem" Content="see all" Tapped="ListBoxItem_Tapped"></ListBoxItem>
+                    <ListBoxItem x:Name="shopItem" Content="shop" Tapped="ListBoxItem_Tapped"></ListBoxItem>
+                    <ListBoxItem x:Name="donateItem" Content="donate" Tapped="ListBoxItem_Tapped"></ListBoxItem>
+                    <ListBoxItem x:Name="winItem" Content="win" Tapped="ListBoxItem_Tapped"></ListBoxItem>
+                </ListBox>
+            </PivotItem>
+            <PivotItem x:Name="statusItem" Header="status" Style="{StaticResource PivotItemStyle}">
+                <WebView x:Name="statusBrowser" NavigationStarting="statusBrowser_NavigationStarting" ScriptNotify="Browser_ScriptNotify" NavigationCompleted="Browser_NavigationCompleted"></WebView>
+            </PivotItem>
+            <PivotItem x:Name="accountItem" Header="account" Style="{StaticResource PivotItemStyle}">
+                <WebView x:Name="accountBrowser" NavigationStarting="accountBrowser_NavigationStarting" ScriptNotify="Browser_ScriptNotify" NavigationCompleted="Browser_NavigationCompleted"></WebView>
+            </PivotItem>
+            <PivotItem x:Name="historyItem" Header="order history" Style="{StaticResource PivotItemStyle}">
+                <WebView x:Name="historyBrowser" NavigationStarting="historyBrowser_NavigationStarting" ScriptNotify="Browser_ScriptNotify" NavigationCompleted="Browser_NavigationCompleted"></WebView>
+            </PivotItem>
+            <PivotItem x:Name="helpItem" Header="help" Style="{StaticResource PivotItemStyle}">
+                <WebView x:Name="helpBrowser" NavigationStarting="helpBrowser_NavigationStarting" ScriptNotify="Browser_ScriptNotify" NavigationCompleted="Browser_NavigationCompleted"></WebView>
+            </PivotItem>
+        </Pivot>
+        </Grid>
+    </Grid>
+    
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal">
+            <AppBarButton Content="Home" Icon="Home" Click="AppBarButton_Click"></AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

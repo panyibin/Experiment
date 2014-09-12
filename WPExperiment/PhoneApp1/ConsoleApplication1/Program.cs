@@ -18,7 +18,7 @@ namespace ConsoleApplication1
                 set{name = value;}
             }
 
-            public string Name { get; set; }
+            //public string Name { get; set; }
 
             private string gender;
 
@@ -66,6 +66,33 @@ namespace ConsoleApplication1
 
             Console.WriteLine(person.Name + "\n" + person.Age.ToString());
             Console.WriteLine(Name + "\n" + Age.ToString());
+
+            List<Person> people = new List<Person>();
+
+            Person p1 = new Person("p1", 15);
+            Person p2 = new Person("p2", 16);
+            Person p3 = new Person("p3", 17);
+            Person p4 = new Person("p4", 18);
+            Person p5 = new Person("p5", 19);
+            Person p6 = new Person(null, 20);
+
+            people.Add(p1);
+            people.Add(p2);
+            people.Add(p3);
+            people.Add(p4);
+            people.Add(p5);
+            people.Add(p6);
+
+            const int age = 17;
+
+            //IEnumerable<Person> results = people.Where(delegate(Person p) { return p.Age > age; });
+            IEnumerable<Person> results = people.Where(p => (p.Age > age));
+
+            Console.WriteLine("people older than 17:");
+            foreach(Person p in results)
+            {
+                Console.WriteLine(p.Name ?? "oh my god");
+            }
 
             Console.ReadLine();
 

@@ -25,6 +25,8 @@ namespace App8._1
     /// </summary>
     public sealed partial class PivotPage : Page
     {
+        private double pointerDownX;
+        private double pointerUpX;
         public PivotPage()
         {
             this.InitializeComponent();
@@ -65,9 +67,64 @@ namespace App8._1
             Debug.WriteLine("baidu:" + e.Value.ToString());
         }
 
+        
         private void Browser2_ScriptNotify(object sender, NotifyEventArgs e)
         {
+            WebView wb = sender as WebView;
+
             Debug.WriteLine("bing:" + e.Value.ToString());
+
+            string[] field = e.Value.ToString().Split(',');
+
+            if(field[0] == "PointerDown")
+            {
+                try
+                {
+                    if (field[1] != null)
+                    {
+                        pointerDownX = double.Parse(field[1]);
+                    }
+                }
+                catch(Exception ex)
+                {
+                    Debug.WriteLine(ex.ToString());
+                }
+                
+            }
+            else if (field[0] == "PointerUp")
+            {
+                try
+                {
+                    if (field.Length >= 2 && field[1] != null)
+                    {
+                        pointerUpX = double.Parse(field[1]);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.ToString());
+
+                    return;
+                }
+
+                if(pointerUpX - pointerDownX > 20)
+                {
+                    if (PivotParent.SelectedIndex > 0)
+                    {
+                        wb.Stop(); //we call this to prevent the page from being navigated to other pages
+
+                        PivotParent.SelectedIndex--;
+                    }
+                        
+                }
+                else if(pointerUpX - pointerDownX < -20)
+                {
+                    wb.Stop();
+
+                    PivotParent.SelectedIndex++;
+                }
+
+            }
         }
 
         private void Browser3_ScriptNotify(object sender, NotifyEventArgs e)
@@ -101,7 +158,7 @@ namespace App8._1
         private async void Browser2_LoadCompleted(object sender, NavigationEventArgs e)
         {
             //await Browser2.InvokeScriptAsync("eval", new string[] {"window.onscroll = function (){window.external.notify(window.pageXOffset + ';' + document.documentElement.scrollTop + ';' + document.body.scrollTop);}"});
-            await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);" });
+            //await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);" });
         }
 
         private async void Browser3_LoadCompleted(object sender, NavigationEventArgs e)
@@ -124,7 +181,8 @@ namespace App8._1
 
         private void homeButton_Click(object sender, RoutedEventArgs e)
         {
-            Browser2.Navigate(new Uri("https://www.bing.com/rewards/dashboard"));
+            //Browser2.Navigate(new Uri("https://www.bing.com/rewards/dashboard"));
+            Frame.Navigate(typeof(MainPage));
         }
 
         private void refreshButton_Click(object sender, RoutedEventArgs e)
@@ -158,7 +216,7 @@ namespace App8._1
         {
             try
             {
-                await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);" });
+                await Browser2.InvokeScriptAsync("eval", new string[] { "document.documentElement.style.msTouchAction = 'pan-y';window.addEventListener('pointerdown', function paint(event) {window.external.notify('PointerDown' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointerup', function paint(event) {window.external.notify('PointerUp' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('mspointerout', function paint(event) {window.external.notify('PointerOut' + ',' + event.clientX + ',' + event.clientY); }, false);window.addEventListener('pointermove', function paint(event) {window.external.notify('PointerMove' + ',' + event.clientX + ',' + event.clientY); }, false);" });
             }
             catch(Exception e)
             {
@@ -169,6 +227,11 @@ namespace App8._1
         private void Browser2_NavigationFailed(object sender, WebViewNavigationFailedEventArgs e)
         {
 
+        }
+
+        private void navigateButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

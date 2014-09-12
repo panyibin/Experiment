@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>YIBINPAN_WK</Machine>
+    <WindowsUser>yibinpan</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>fdc91c65-3705-4528-a28d-20c734567dc6</PackageIdentityName>
+    <IntermediateOutputPath>D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\RewardsDemo.exe">
+      <PackagePath>RewardsDemo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\AppIcon.png">
+      <PackagePath>Assets\AppIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\BingIcon.png">
+      <PackagePath>Assets\BingIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\RedeemPage.xbf">
+      <PackagePath>RedeemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\RewardsDemo.xr.xml">
+      <PackagePath>RewardsDemo.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\STUDY\Git\WPExperiment\PhoneApp1\RewardsDemo\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

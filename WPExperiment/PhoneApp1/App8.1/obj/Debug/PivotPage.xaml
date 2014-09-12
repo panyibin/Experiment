@@ -10,7 +10,7 @@
     >
 
     <Grid>
-        <Pivot x:ConnectionId='1'                                           Background="White">
+        <Pivot x:ConnectionId='1' x:Name="PivotParent"                                           Background="White">
             <PivotItem Header="One">
                 <WebView x:ConnectionId='5' x:Name="Browser1"                                                                            ></WebView>
             </PivotItem>
@@ -40,6 +40,7 @@
                 <AppBarButton x:ConnectionId='7' x:Name="backButton" Label="Back" Icon="Back"                         />
                 <AppBarButton x:ConnectionId='8' x:Name="refreshButton" Label="Refresh" Icon="Refresh"                            />
                 <AppBarButton x:ConnectionId='9' x:Name="settingButton" Label="Sign out" Icon="Setting"                            />
+                <AppBarButton x:ConnectionId='10' x:Name="navigateButton" Label="Navigate" Icon="Directions"                             />
             </CommandBar.PrimaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

@@ -10,7 +10,7 @@
     >
 
     <Grid>
-        <Pivot SelectionChanged="Pivot_SelectionChanged" Background="White">
+        <Pivot x:Name="PivotParent" SelectionChanged="Pivot_SelectionChanged" Background="White">
             <PivotItem Header="One">
                 <WebView x:Name="Browser1" LoadCompleted="Browser1_LoadCompleted" ScriptNotify="Browser1_ScriptNotify"></WebView>
             </PivotItem>
@@ -40,6 +40,7 @@
                 <AppBarButton x:Name="backButton" Label="Back" Icon="Back" Click="backButton_Click"/>
                 <AppBarButton x:Name="refreshButton" Label="Refresh" Icon="Refresh" Click="refreshButton_Click"/>
                 <AppBarButton x:Name="settingButton" Label="Sign out" Icon="Setting" Click="settingButton_Click"/>
+                <AppBarButton x:Name="navigateButton" Label="Navigate" Icon="Directions" Click="navigateButton_Click"/>
             </CommandBar.PrimaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
