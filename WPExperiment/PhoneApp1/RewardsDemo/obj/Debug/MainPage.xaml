@@ -19,7 +19,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid x:Name="RewardsHeader" Grid.Row="0">
+        <Grid x:Name="RewardsHeader" Grid.Row="0" Margin="0,5,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="*" MinWidth="30"></ColumnDefinition>
